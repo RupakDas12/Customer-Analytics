@@ -1,12 +1,23 @@
-Customer Analytics
-A SQL-powered analytics pipeline built to analyse customer behaviour, revenue contribution, and geographic distribution — combining SQL aggregation with Python visualisation end-to-end.
+# Customer Analytics
 
-Overview
-DetailInfoToolsPython, Pandas, SQL, SQLAlchemy, Seaborn, Jupyter NotebookDatabaseRelational database queried via SQLAlchemyFocus AreasCustomer lifetime value, retention, regional distribution
+EDA and SQL-powered pipeline to analyse customer lifetime value, retention cohorts, and regional distribution.
 
-Key Findings
+## Overview
 
-Top customer by lifetime revenue: Sean Miller at $5,043
-Overall customer retention rate: 92.9% (New vs Returning cohort analysis)
-South region has only 512 customers vs West region's 686 — a concrete geographic growth opportunity
-Built reusable SQL queries using GROUP BY, aggregation, and cohort logic directly from Jupyter
+| Detail | Info |
+| --- | --- |
+| Tools | Python, Pandas, SQL, SQLAlchemy, Seaborn, Jupyter |
+| Database | Relational database queried via SQLAlchemy |
+| Focus | Lifetime value, retention, regional distribution |
+
+## Key Findings
+
+- Top customer by lifetime revenue: Sean Miller at $5,043
+- Customer retention rate: 92.9% (New vs Returning cohort analysis)
+- South region (512 customers) underperforms vs West (686) — geographic growth opportunity
+- Reusable SQL queries using GROUP BY and aggregation run directly from Jupyter
+
+## How to Run
+
+pip install pandas sqlalchemy seaborn jupyter
+jupyter notebook customer_analytics.ipynb
